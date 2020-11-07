@@ -1,0 +1,79 @@
+.hero{
+    &__image{
+        position: relative;
+        // padding: 1em;
+        z-index: -1111;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        div{
+            @include bg-blue;
+            height: 75%;
+            top: 70px;
+            left: 85px;
+            right: 0;
+            border-radius: 0 0 0 42%;
+        }
+
+    }
+    &__description{
+        text-align: center;
+        .button{
+            &-blue{
+                @include button;
+                background: var(--SoftBlue);
+                color: var(--Gray);
+            }
+            &-white{
+                @include button;
+                background-color: var(--Gray);
+                color: rgb(105, 104, 104);
+            }
+        }
+
+    }
+    @media (min-width: 1440px) {
+        display: grid;
+        margin-top: 2em;
+        grid-template-columns: 600px 1fr;
+        grid-template-areas: "description image";
+        
+        &__description{
+            font-size: 139%;
+        }
+        .paragraph{
+            width: 100%;
+        }
+        .wrapper{
+            padding: 3em 0 0 5em;
+        }
+        &__image{
+            grid-area: image;
+            position: relative;
+            img{
+                width: 670px;
+                position: absolute;
+                right: 70px;
+            }
+            div{
+                position: absolute;
+                left: 300px;
+                top: 120px;
+                height: 90%;
+            }
+        }
+        .wrapper{
+            grid-area: description;
+            p,h1{
+                text-align: left;
+            }
+        }
+        .buttons{
+            text-align: left;
+            .button-blue{
+                margin-right: 1em;
+            }
+        }
+    }
+}

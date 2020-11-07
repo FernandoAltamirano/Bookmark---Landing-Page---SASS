@@ -1,0 +1,107 @@
+
+:root{
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --Line: rgb(170, 170, 170);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    --Gray: rgb(239, 239, 239);
+    --FontSize: 18px;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--FontSize);
+    margin: 0;
+    padding: 0;
+}
+
+.containt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black-style{
+    opacity: 1;
+    background-color: var(--VeryDarkBlue);
+}
+
+.wrapper{
+    width: 100%;
+    padding: 3em 1.5em;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.is-hidden{
+    display: none;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    margin: 0;
+}
+
+.line{
+    background-color: var(--Line);
+    height: 1px;
+    width: 100%;
+    display: inline-block;
+}
+
+.paragraph{
+    word-spacing: .9px;
+    color: var(--GrayishBlue);
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: .84em;
+    text-align: center;
+    @media (min-width: 1440px) {
+        padding-top: 2em;
+        width: 40%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.buttons{
+    margin: 2.5em 0;
+}
+
+@mixin button {
+    font-weight: 500;
+    border-radius: .3em;
+    padding: 1em .4em;
+    border: none;
+    box-shadow: 0px 16px 12px -8px  rgba(194,194,194,1);
+}
+
+@mixin bg-blue {
+    background-color: var(--SoftBlue);
+    position: absolute;
+    z-index: -2;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+@import 'header';
+@import 'hero';
+@import 'features';
+@import 'dowloads';
+@import 'questions';
+@import 'contact';
+@import 'footer';

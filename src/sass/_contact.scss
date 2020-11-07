@@ -1,0 +1,63 @@
+.contact{
+    text-align: center;
+    color: white;
+    background-color: var(--SoftBlue);
+    small{
+        font-size: .7em;
+        letter-spacing: 6px;
+    }
+    h2{
+        margin: .5em 0;
+        color: white;
+        font-weight: 400;
+    }
+    .button{
+        &-red{
+            padding: 1em 1.9em;
+            font-size: .9em;
+            text-decoration: none;
+            background: var(--SoftRed);
+            color: var(--Gray);
+            border-radius: 5px;
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+        
+    }
+    input{
+        outline: none;
+        border: white;
+        font-size: 1em;
+        padding: .5em 1.5em;
+        border-radius: 5px;
+        width: 80%;
+        display: block;
+        margin: 1em  auto;
+    }
+    @media (min-width:1440px) {
+        .content_contact{
+            margin: 2em auto;
+            width: 40%;
+            h2{
+                font-size: 180%;
+            }
+            form{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 1em;
+                grid-template-areas: "input input button";
+                input{
+                    grid-area: input;
+                }
+                button{
+                    cursor: pointer;
+                    border: none;
+                    grid-area: button;
+                    padding: .6em;
+                }
+            }
+        }
+
+    }
+}

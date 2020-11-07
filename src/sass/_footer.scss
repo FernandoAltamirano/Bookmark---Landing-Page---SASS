@@ -1,0 +1,31 @@
+.footer{
+    background: var(--VeryDarkBlue);
+    text-align: center;
+    
+    &__links{
+        display: grid;
+        grid-template-columns: 1fr;
+        a{
+            letter-spacing: 2px;
+            font-size: .7em;
+            color: var(--GrayishBlue);
+            text-decoration: none;
+            margin: 1em 0;  
+        }
+    }
+    &__social{
+        img{
+            margin: 1em;
+        }
+    }
+
+    @media (min-width:1440px){
+        &__links{
+            display: flex;
+            margin-right: 25em;
+            a{
+                margin: 0 2em;
+            }
+        }
+    }
+}

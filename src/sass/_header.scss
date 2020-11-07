@@ -1,0 +1,105 @@
+.header{
+    .wrapper{
+        padding-top: 2em;
+    }
+    position: relative;
+    input{
+        display: none;
+    }
+    .menu{
+        img{
+            margin-right: 1em;
+            cursor: pointer;
+        }
+    }
+    #menu:checked ~ .header__links{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5em;
+        height: 100vh;
+        opacity: .95;
+        overflow: hidden;
+        background-color: var(--VeryDarkBlue);
+        text-align: center;
+        z-index: 1000;
+        a{
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: white;
+            display: inherit;
+            margin: .5em 0;
+        }
+        .social{
+            img{
+                width: 8%;
+                margin: 0 2em;
+            }
+            margin-top: 5em;
+        }
+    }
+    
+    &__image{
+        // position: static;
+        cursor: pointer;
+    }
+    &__links{
+        display: none;
+        div{
+            padding: 1.3em;
+        }
+        .login{
+            padding: .5em 0;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+    }
+    &__button{
+        display: none;
+    }
+
+    .line{
+        width: 90%;
+    }
+
+    
+    @media (min-width: 1024px) {
+        
+        .menu{
+            display: none;
+        }
+        &__links{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            a{
+                border: none;
+                color: var(--VeryDarkBlue);
+                letter-spacing: 3px;
+                font-size: .8em;
+                margin: 0 1em;
+                text-decoration: none;
+                &:hover{
+                    color: var(--SoftRed);
+                }
+            }
+            .social{
+                display: none;
+            }
+            .login{
+                border: none;
+                color: white;
+            }
+            div{
+                margin-left: 2em;
+                padding: .5em 1em;
+                border-radius: 5px;
+                color: white;
+                background-color: var(--SoftRed);
+            }
+        }
+    }
+}

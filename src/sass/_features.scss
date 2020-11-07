@@ -1,0 +1,110 @@
+.features{
+    .wrapper{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+   &-item{
+        display: none;
+       
+   }
+    input{
+        display: none;
+    }
+    input[id = "Bookmarking"]:checked  ~.features__list #item-Bookmarking{
+        display: block;
+    }
+    input[id = "Searching"]:checked  ~.features__list #item-Searching{
+        display: block;
+    }
+    input[id = "Sharing"]:checked  ~.features__list #item-Sharing{
+        display: block;
+    }
+    
+    input[id = "Bookmarking"]:checked  ~.features__list ul [for = "Bookmarking"]{
+        padding: 0 1em .9em 1em;
+        border-bottom: 5px solid var(--SoftRed);
+    }
+    input[id = "Searching"]:checked  ~.features__list ul [for = "Searching"]{
+        padding: 0 1em .9em 1em;
+        border-bottom: 5px solid var(--SoftRed);
+    }
+    input[id = "Sharing"]:checked  ~.features__list ul [for = "Sharing"]{
+        padding: 0 1em .9em 1em;
+        border-bottom: 5px solid var(--SoftRed);
+    }
+    &__item{
+        &--image{
+            position: relative;
+            margin-bottom: 3em;
+            img{
+                max-width: 80%;
+            }
+            div{
+                @include bg-blue;
+                height: 90%;
+                right: 85px;
+                top: 60px;
+                left: 0;
+                border-radius: 0 0 38% 0;
+                max-width: 60%;
+            }
+        }
+    }
+
+    text-align: center;
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    &__link{
+        padding: 1em 0;
+        border-bottom: 1px solid var(--GrayishBlue);
+    }
+    
+    @media (min-width: 768px) {
+        &__list{
+            ul{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                margin-bottom: 2em ;
+            }
+        }
+        input[id = "Bookmarking"]:checked  ~.features__list #item-Bookmarking{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        input[id = "Searching"]:checked  ~.features__list #item-Searching{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        input[id = "Sharing"]:checked  ~.features__list #item-Sharing{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        &-item{
+            .wrapper{
+                padding-right: 4em ;
+                margin: auto;
+                h2{
+                    text-align: left;
+                }
+                .paragraph{
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 1440px) {
+            padding-top: 8em;
+            &-item{
+                .paragraph{
+                    margin: 0;
+                    width: 70%;
+                }
+            }
+    }
+}
