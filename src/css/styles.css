@@ -47,7 +47,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
   color: var(--VeryDarkBlue);
   margin: 0;
@@ -148,9 +150,6 @@ h1, h2, h3 {
   width: 90%;
 }
 @media (min-width: 1024px) {
-  .header .menu {
-    display: none;
-  }
   .header__links {
     display: flex;
     align-items: center;
@@ -163,23 +162,37 @@ h1, h2, h3 {
     font-size: 0.8em;
     margin: 0 1em;
     text-decoration: none;
+    transition: 450ms all;
   }
-  .header__links a:hover {
+  .header__links .btn {
     color: var(--SoftRed);
+  }
+  .header__links .a:hover {
+    color: var(--SoftRed);
+  }
+  .header__links .btn {
+    transition: 450ms all;
+    cursor: pointer;
+  }
+  .header__links .btn:hover {
+    background-color: var(--SoftRed);
+    border-color: var(--SoftRed);
+  }
+  .header__links .btn:hover > a {
+    color: white;
   }
   .header__links .social {
     display: none;
   }
-  .header__links .login {
-    border: none;
-    color: white;
-  }
+
   .header__links div {
-    margin-left: 2em;
     padding: 0.5em 1em;
     border-radius: 5px;
     color: white;
-    background-color: var(--SoftRed);
+    width: 80%;
+    margin: 1em auto;
+    border: 1px solid black;
+    /* background-color: var(--SoftRed); */
   }
 }
 
@@ -256,7 +269,8 @@ h1, h2, h3 {
   .hero .wrapper {
     grid-area: description;
   }
-  .hero .wrapper p, .hero .wrapper h1 {
+  .hero .wrapper p,
+  .hero .wrapper h1 {
     text-align: left;
   }
   .hero .buttons {
@@ -280,24 +294,28 @@ h1, h2, h3 {
 .features input {
   display: none;
 }
-.features input[id=Bookmarking]:checked ~ .features__list #item-Bookmarking {
+.features input[id="Bookmarking"]:checked ~ .features__list #item-Bookmarking {
   display: block;
 }
-.features input[id=Searching]:checked ~ .features__list #item-Searching {
+.features input[id="Searching"]:checked ~ .features__list #item-Searching {
   display: block;
 }
-.features input[id=Sharing]:checked ~ .features__list #item-Sharing {
+.features input[id="Sharing"]:checked ~ .features__list #item-Sharing {
   display: block;
 }
-.features input[id=Bookmarking]:checked ~ .features__list ul [for=Bookmarking] {
+.features
+  input[id="Bookmarking"]:checked
+  ~ .features__list
+  ul
+  [for="Bookmarking"] {
   padding: 0 1em 0.9em 1em;
   border-bottom: 5px solid var(--SoftRed);
 }
-.features input[id=Searching]:checked ~ .features__list ul [for=Searching] {
+.features input[id="Searching"]:checked ~ .features__list ul [for="Searching"] {
   padding: 0 1em 0.9em 1em;
   border-bottom: 5px solid var(--SoftRed);
 }
-.features input[id=Sharing]:checked ~ .features__list ul [for=Sharing] {
+.features input[id="Sharing"]:checked ~ .features__list ul [for="Sharing"] {
   padding: 0 1em 0.9em 1em;
   border-bottom: 5px solid var(--SoftRed);
 }
@@ -333,15 +351,18 @@ h1, h2, h3 {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2em;
   }
-  .features input[id=Bookmarking]:checked ~ .features__list #item-Bookmarking {
+  .features
+    input[id="Bookmarking"]:checked
+    ~ .features__list
+    #item-Bookmarking {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .features input[id=Searching]:checked ~ .features__list #item-Searching {
+  .features input[id="Searching"]:checked ~ .features__list #item-Searching {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .features input[id=Sharing]:checked ~ .features__list #item-Sharing {
+  .features input[id="Sharing"]:checked ~ .features__list #item-Sharing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

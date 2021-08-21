@@ -1,284 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="containt">
-                <a href="#" class="header__image">
-                    <img id="logo-image" src="./images/logo-bookmark.svg" alt="">
-                </a>
-                <input type="checkbox" id="menu">
-                <div class="header__links">
-                    <span class="line"></span>
-                    <a href="#">FEATURES</a>
-                    <span class="line"></span>
-                    <a href="#">PRICING</a>
-                    <span class="line"></span>
-                    <a href="#">CONTACT</a>
-                    <span class="line"></span>
-                    <div>
-                        <a class="login" href="#">LOGIN</a>
-                    </div>
-                    <div class="social">
-                        <img src="./images/icon-facebook.svg" alt="">
-                        <img src="./images/icon-twitter.svg" alt="">
-                    </div>
-                </div>
-                <label for="menu" class="menu">
-                    <img src="./images/icon-hamburger.svg" id="hamburguer" alt="">
-                </label>
+      <div class="wrapper">
+        <div class="containt">
+          <a href="#" class="header__image">
+            <img id="logo-image" src="./images/logo-bookmark.svg" alt="" />
+          </a>
+          <input type="checkbox" id="menu" />
+          <div class="header__links">
+            <span class="line"></span>
+            <a class="a" href="#">FEATURES</a>
+            <span class="line"></span>
+            <a class="a" href="#">PRICING</a>
+            <span class="line"></span>
+            <a class="a" href="#">CONTACT</a>
+            <span class="line"></span>
+            <div class="btn">
+              <a href="#">LOGIN</a>
             </div>
+            <div class="social">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
+            </div>
+          </div>
+          <label for="menu" class="menu">
+            <img src="./images/icon-hamburger.svg" id="hamburguer" alt="" />
+          </label>
         </div>
+      </div>
     </header>
-    <section  class="hero">
-        <div class="hero__image">
-            <img src="./images/illustration-hero.svg" alt="">
-            <div></div>
+    <section class="hero">
+      <div class="hero__image">
+        <img src="./images/illustration-hero.svg" alt="" />
+        <div></div>
+      </div>
+      <div class="wrapper">
+        <div class="hero__description">
+          <h1>A Simple Bookmark Manager</h1>
+          <div>
+            <p class="paragraph">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+          </div>
+          <div class="buttons">
+            <a class="button-blue">Get it on Chrome</a>
+            <a class="button-white">Get it on Firefox</a>
+          </div>
         </div>
-        <div class="wrapper">
-            <div class="hero__description">
-                <h1>
-                    A Simple Bookmark Manager
-                </h1>
-                <div>
-                    <p class="paragraph">
-                    A clean and simple interface to organize your favourite websites. Open a new
-                    browser tab and see your sites load instantly. Try it for free.
-                    </p>
-                </div>
-                <div class="buttons">
-                    <a class="button-blue">Get it on Chrome</a>
-                    <a class="button-white">Get it on Firefox</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
     <section class="features">
+      <div class="wrapper">
+        <h2>Features</h2>
+        <p class="paragraph">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+      <input
+        type="radio"
+        value="Bookmarking"
+        name="input"
+        id="Bookmarking"
+        checked
+      />
+      <input type="radio" value="Searching" name="input" id="Searching" />
+      <input type="radio" value="Sharing" name="input" id="Sharing" />
+      <div class="features__list">
+        <div class="wrapper">
+          <ul>
+            <li class="features__link">
+              <label for="Bookmarking">Simple Bookmarking</label>
+            </li>
+            <li class="features__link">
+              <label for="Searching">Speedy Searching</label>
+            </li>
+            <li class="features__link">
+              <label for="Sharing">Easy Sharing</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features__items">
+          <div class="features-item" id="item-Bookmarking">
+            <div class="features__item--image">
+              <img src="./images/illustration-features-tab-1.svg" alt="" />
+              <div></div>
+            </div>
             <div class="wrapper">
-                <h2>Features</h2>
-                <p class="paragraph">
-                    Our aim is to make it quick and easy for you to access your favourite websites.
-                    Your bookmarks sync between your devices so you can access them on the go.
-                </p>
+              <h2>Bookmark in one click</h2>
+              <p class="paragraph">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
             </div>
-            <input type="radio" value="Bookmarking" name="input" id="Bookmarking" checked>
-            <input type="radio" value="Searching"name="input"  id="Searching">
-            <input type="radio" value="Sharing"name="input"  id="Sharing">
-            <div class="features__list">
-                <div class="wrapper">
-                    <ul>
-                        <li class="features__link"><label for="Bookmarking">Simple Bookmarking</label></li>
-                        <li class="features__link"><label for="Searching">Speedy Searching</label></li>
-                        <li class="features__link"><label for="Sharing">Easy Sharing</label></li>
-                    </ul>
-                </div>
-                <div class="features__items">
-                    <div class="features-item" id="item-Bookmarking">
-                        <div class="features__item--image">
-                            <img src="./images/illustration-features-tab-1.svg" alt="">
-                            <div></div>
-                        </div>
-                        <div class="wrapper">
-                            <h2>Bookmark in one click</h2>
-                            <p class="paragraph">
-                                Organize your bookmarks however you like. Our simple drag-and-drop interface
-                                gives you complete control over how you manage your favourite sites.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="features-item" id="item-Searching">
-                        <div class="features__item--image">
-                            <img src="./images/illustration-features-tab-2.svg" alt="">
-                            <div></div>
-                        </div>
-                        <div class="wrapper">
-                            <h2>Intelligent search</h2>
-                            <p class="paragraph">
-                                Our powerful search feature will help you find saved sites in no time at all.
-                                No need to trawl through all of your bookmarks.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="features-item" id="item-Sharing">
-                        <div class="features__item--image">
-                            <img src="./images/illustration-features-tab-3.svg" alt="">
-                            <div></div>
-                        </div>
-                        <div class="wrapper">
-                            <h2>Share your bookmarks</h2>
-                            <p class="paragraph">
-                                Easily share your bookmarks and collections with others. Create a shareable
-                                link that you can send at the click of a button.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="features-item" id="item-Searching">
+            <div class="features__item--image">
+              <img src="./images/illustration-features-tab-2.svg" alt="" />
+              <div></div>
             </div>
-        
+            <div class="wrapper">
+              <h2>Intelligent search</h2>
+              <p class="paragraph">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+            </div>
+          </div>
+          <div class="features-item" id="item-Sharing">
+            <div class="features__item--image">
+              <img src="./images/illustration-features-tab-3.svg" alt="" />
+              <div></div>
+            </div>
+            <div class="wrapper">
+              <h2>Share your bookmarks</h2>
+              <p class="paragraph">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="dowloads">
-        <div class="wrapper">
-            <h2>Dowload the extension</h2>
-            <p class="paragraph">
-                We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
-            </p>
-            <div class="grid">
-                <div class="dowloads__card">
-                    <div class="image-principal">
-                        <img src="./images/logo-chrome.svg" alt="">
-                    </div>
-                    <h3>Add to Chrome</h3>
-                    <div class="paragraph">
-                        Minimun version 62
-                    </div>
-                    <div class="image-line">
-                        <img  src="./images/bg-dots.svg" alt="">
-                    </div>
-                    <div class="content-button">
-                        <a class="button-blue" href="#">Add & Install Extension</a>
-                    </div>
-                </div>
-                <div class="dowloads__card">
-                    <div class="image-principal">
-                        <img src="./images/logo-firefox.svg" alt="">
-                    </div>
-                    <h3>Add to Firexfox</h3>
-                    <div class="paragraph">
-                        Minimun version 55
-                    </div>
-                    <div class="image-line">
-                        <img  src="./images/bg-dots.svg" alt="">
-                    </div>
-                    <div class="content-button">
-                        <a class="button-blue" href="#">Add & Install Extension</a>
-                    </div>
-                </div>
-                <div class="dowloads__card">
-                    <div class="image-principal">
-                        <img src="./images/logo-opera.svg" alt="">
-                    </div>
-                    <h3>Add to Chrome</h3>
-                    <div class="paragraph">
-                        Minimun version 46
-                    </div>
-                    <div class="image-line">
-                        <img  src="./images/bg-dots.svg" alt="">
-                    </div>
-                    <div class="content-button">
-                        <a class="button-blue" href="#">Add & Install Extension</a>
-                    </div>
-                </div>
+      <div class="wrapper">
+        <h2>Dowload the extension</h2>
+        <p class="paragraph">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+        <div class="grid">
+          <div class="dowloads__card">
+            <div class="image-principal">
+              <img src="./images/logo-chrome.svg" alt="" />
             </div>
+            <h3>Add to Chrome</h3>
+            <div class="paragraph">Minimun version 62</div>
+            <div class="image-line">
+              <img src="./images/bg-dots.svg" alt="" />
+            </div>
+            <div class="content-button">
+              <a class="button-blue" href="#">Add & Install Extension</a>
+            </div>
+          </div>
+          <div class="dowloads__card">
+            <div class="image-principal">
+              <img src="./images/logo-firefox.svg" alt="" />
+            </div>
+            <h3>Add to Firexfox</h3>
+            <div class="paragraph">Minimun version 55</div>
+            <div class="image-line">
+              <img src="./images/bg-dots.svg" alt="" />
+            </div>
+            <div class="content-button">
+              <a class="button-blue" href="#">Add & Install Extension</a>
+            </div>
+          </div>
+          <div class="dowloads__card">
+            <div class="image-principal">
+              <img src="./images/logo-opera.svg" alt="" />
+            </div>
+            <h3>Add to Chrome</h3>
+            <div class="paragraph">Minimun version 46</div>
+            <div class="image-line">
+              <img src="./images/bg-dots.svg" alt="" />
+            </div>
+            <div class="content-button">
+              <a class="button-blue" href="#">Add & Install Extension</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="questions">
-        <div class="wrapper">
-            <h2>Frequently Asked Questions</h2>
+      <div class="wrapper">
+        <h2>Frequently Asked Questions</h2>
+        <p class="paragraph">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div class="content_questions">
+          <div class="questions__item">
+            <label for="checkboxQuestions">
+              <div class="item-head">
+                <p>What is Bookmark</p>
+                <img id="arrow" src="./images/icon-arrow.svg" alt="" />
+              </div>
+            </label>
+            <input
+              type="checkbox"
+              checked="false"
+              name=""
+              id="checkboxQuestions"
+            />
             <p class="paragraph">
-                Here are some of our FAQs. If you have any other questions you’d like
-                answered please feel free to email us.
-            </p>  
-            <div class="content_questions">
-                <div class="questions__item">
-                    <label for="checkboxQuestions">
-                        <div class="item-head">
-                            <p>What is Bookmark</p>
-                            <img id="arrow" src="./images/icon-arrow.svg" alt="">
-                        </div>
-                    </label>
-                    <input type="checkbox" checked="false" name="" id="checkboxQuestions">
-                    <p class="paragraph">
-                        Lorem ipsum    dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-                    </p>
-                    <hr>
-                </div>
-                <div class="questions__item">
-                    <label for="checkboxQuestions2">
-                        <div class="item-head">
-                            <p>How can I request a new browser?</p>
-                            <img id="arrow2" src="./images/icon-arrow.svg" alt="">
-                        </div>
-                    </label>
-                    <input checked="false" type="checkbox" name="" id="checkboxQuestions2">
-                    <p class="paragraph">
-                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-                    </p>
-                    <hr>
-                </div>
-                <div class="questions__item">
-                    <label for="checkboxQuestions3">
-                        <div class="item-head">
-                            <p>Is there a mobile app?</p>
-                            <img id="arrow3" src="./images/icon-arrow.svg" alt="">
-                        </div>
-                    </label>
-                    <input checked="false" type="checkbox" name="" id="checkboxQuestions3">
-                    <p class="paragraph">
-                        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-                        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-                        sollicitudin ex et ultricies bibendum.
-                    </p>
-                    <hr>
-                </div>
-                <div class="questions__item">
-                    <label for="checkboxQuestions4">
-                        <div class="item-head">
-                            <p>What about other Chromium browsers?</p>
-                            <img id="arrow4" src="./images/icon-arrow.svg" alt="">
-                        </div>
-                    </label>
-                    <input checked="false" type="checkbox" name="" id="checkboxQuestions4">
-                    <p class="paragraph">
-                        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-                        vitae neque eget nisl gravida pellentesque non ut velit.
-                    </p>
-                    <hr>
-                </div>
-                <div class="content-button">
-                    <a class="button-blue" href="">More Info</a>
-                </div>
-            </div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+            <hr />
+          </div>
+          <div class="questions__item">
+            <label for="checkboxQuestions2">
+              <div class="item-head">
+                <p>How can I request a new browser?</p>
+                <img id="arrow2" src="./images/icon-arrow.svg" alt="" />
+              </div>
+            </label>
+            <input
+              checked="false"
+              type="checkbox"
+              name=""
+              id="checkboxQuestions2"
+            />
+            <p class="paragraph">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+            <hr />
+          </div>
+          <div class="questions__item">
+            <label for="checkboxQuestions3">
+              <div class="item-head">
+                <p>Is there a mobile app?</p>
+                <img id="arrow3" src="./images/icon-arrow.svg" alt="" />
+              </div>
+            </label>
+            <input
+              checked="false"
+              type="checkbox"
+              name=""
+              id="checkboxQuestions3"
+            />
+            <p class="paragraph">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+            <hr />
+          </div>
+          <div class="questions__item">
+            <label for="checkboxQuestions4">
+              <div class="item-head">
+                <p>What about other Chromium browsers?</p>
+                <img id="arrow4" src="./images/icon-arrow.svg" alt="" />
+              </div>
+            </label>
+            <input
+              checked="false"
+              type="checkbox"
+              name=""
+              id="checkboxQuestions4"
+            />
+            <p class="paragraph">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
+            <hr />
+          </div>
+          <div class="content-button">
+            <a class="button-blue" href="">More Info</a>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="contact ">
-        <div class="wrapper">
-            <small>35.000+ ALREADY JOINED</small>
-            <div class="content_contact">
-                <h2>Stay up-to-date with what we're doing</h2>
-                <form action="" method="post">
-                    <input type="email" name="" id="">
-                    <button class="button-red" href="#">Contact Us</button>
-                </form>
-            </div>
+    <section class="contact">
+      <div class="wrapper">
+        <small>35.000+ ALREADY JOINED</small>
+        <div class="content_contact">
+          <h2>Stay up-to-date with what we're doing</h2>
+          <form action="" method="post">
+            <input type="email" name="" id="" />
+            <button class="button-red" href="#">Contact Us</button>
+          </form>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="containt">
-                <img src="./images/logo-bookmarkWhite.svg" alt="">
-                <div class="footer__links">
-                    <a href="#">FEATURES</a>
-                    <a href="#">PRICING</a>
-                    <a href="#">CONTACT</a>
-                </div>
-                <div class="footer__social">
-                    <img src="./images/icon-facebook.svg" alt="">
-                    <img src="./images/icon-twitter.svg" alt="">
-                </div>
-            </div>
+      <div class="wrapper">
+        <div class="containt">
+          <img src="./images/logo-bookmarkWhite.svg" alt="" />
+          <div class="footer__links">
+            <a href="#">FEATURES</a>
+            <a href="#">PRICING</a>
+            <a href="#">CONTACT</a>
+          </div>
+          <div class="footer__social">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+          </div>
         </div>
+      </div>
     </footer>
     <script src="./src/scripts/script.js"></script>
-</body>
+  </body>
 </html>
